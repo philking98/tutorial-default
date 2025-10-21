@@ -1,15 +1,98 @@
 {
-    "atomType": "Molecule",
-    "name": "tutorial-default",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "929b1d72-6145-4727-8150-e77962c34627",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "tutorial-default",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "929b1d72-6145-4727-8150-e77962c34627",
+  "ioValues": [],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "51f851b2-7f02-4e27-86f0-a46b2f8e060e",
+      "ioValues": []
+    },
+    {
+      "atomType": "Rectangle",
+      "name": "Rectangle",
+      "x": 0.4874245472837022,
+      "y": 0.44649446494464945,
+      "uniqueID": "da970e55-d51d-4297-9b34-2c30f6c22082",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 100,
+          "currentEquation": "100"
+        },
+        {
+          "name": "y length",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.5874245472837022,
+      "y": 0.44649446494464945,
+      "uniqueID": "436d9fff-8763-4ce8-8115-7fba4f44d1a9",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "name": "Rotate",
+      "x": 0.6874245472837022,
+      "y": 0.44649446494464945,
+      "uniqueID": "553d800d-781c-4e31-9d6a-6928730df90c",
+      "ioValues": [
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "da970e55-d51d-4297-9b34-2c30f6c22082",
+      "ap2ID": "436d9fff-8763-4ce8-8115-7fba4f44d1a9"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "436d9fff-8763-4ce8-8115-7fba4f44d1a9",
+      "ap2ID": "553d800d-781c-4e31-9d6a-6928730df90c"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "compiledBom": {},
+  "filetypeVersion": 1
 }
